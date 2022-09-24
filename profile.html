@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Profile Page</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	</head>
+	<body class="loggedin">
+		<nav class="navtop">
+			<div>
+				<h1>hub</h1>
+				<a href="home.html"><i class="fas fa-home"></i>Home</a>
+				<a href="profile.html"><i class="fas fa-user-circle"></i>Profile</a>
+				<a href="admin/index.php" target="_blank"><i class="fas fa-user-cog"></i>Admin</a>
+				<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                <a href="#" class="avatar">H</a>
+			</div>
+		</nav>
+		<div class="content profile">
+
+			<h2>Profile Page</h2>
+
+			<div class="block">
+
+				<p>Your account details are below.</p>
+
+				<div class="profile-detail">
+					<strong>Username</strong>
+				</div>
+
+				<div class="profile-detail">
+					<strong>Email</strong>
+				</div>
+
+				<div class="profile-detail">
+					<strong>Role</strong>
+				</div>
+
+				<div class="profile-detail">
+					<strong>Registered</strong>
+				</div>
+
+				<a class="profile-btn" href="profile.php?action=edit">Edit Details</a>
+
+			</div>
+
+		</div>
+		<div class="content profile">
+
+			<h2>Edit Profile Page</h2>
+			
+			<div class="block">
+
+				<form action="profile.php?action=edit" method="post">
+
+					<label for="username">Username</label>
+					<input type="text" value="" name="username" id="username" placeholder="Username">
+
+					<label for="password">New Password</label>
+					<input type="password" name="password" id="password" placeholder="New Password">
+
+					<label for="cpassword">Confirm Password</label>
+					<input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password">
+
+					<label for="email">Email</label>
+					<input type="email" value="" name="email" id="email" placeholder="Email">
+
+					<div>
+						<input class="profile-btn" type="submit" value="Save">
+					</div>
+
+					<p></p>
+
+				</form>
+
+			</div>
+
+		</div>
+	</body>
+</html>
